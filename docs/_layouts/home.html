@@ -11,7 +11,7 @@ layout: base
     Here you will find my latest blog posts. 
   </div>
 
-  <a href="/categories/">Categories</a>
+  <a href="/{{site.repository_name}}/categories/">Categories</a>
 
   <br>
   <hr>
@@ -60,11 +60,11 @@ layout: base
 
           {%- if post.thumbnail_location -%}
           <div class="blog-post-thumbnail">
-            <img src="/assets/img/posts/{{ post.thumbnail_location}}/thumbnail.png"/>
+            <img src="/{{site.repository_name}}/assets/img/posts/{{ post.thumbnail_location}}/thumbnail.jpeg"/>
           </div>
           {%- else -%}
           <div class="blog-post-thumbnail">
-            <img src="/assets/img/posts/default-thumbnail.png" />
+            <img src="/{{site.repository_name}}/assets/img/posts/default-thumbnail.png" />
           </div>
           {%- endif -%}
 
